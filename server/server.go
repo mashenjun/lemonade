@@ -39,7 +39,7 @@ func Serve(c *lemon.CLI, logger log.Logger) error {
 			logger.Error(err.Error())
 			continue
 		}
-		logger.Info("Request from " + conn.RemoteAddr().String())
+		// logger.Info("Request from " + conn.RemoteAddr().String())
 		if !ra.InlucdeConn(conn) {
 			continue
 		}
